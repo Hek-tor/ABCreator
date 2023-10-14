@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>ABCreator</title>
+        <script type="module" src="js/main.js"></script>
+        <link rel="icon" href="img/favicon.png">
+        <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.32/dist/sweetalert2.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+
+    <body>
+        <header class="banner_Container">
+            <img class="app_Banner" src="img/Banner.webp" alt="Game Banner">
+        </header>
+
+        <section class="generateWord">
+            <p id="letter">Iniciar juego</p>
+        </section>
+
+        <section class="interaction">
+            <button id="btn_Create" class="btn_Create" type="button">Crear letra</button>
+            <p class="instructions">Para generar una letra aleatoria
+                presiona el botón de arriba.</p>
+
+            <div class="useWords">
+                <h3>Letras usadas:</h3>
+                <p class="logRecord" id="logRecord"></p>
+            </div>
+        </section>
+
+        <footer class="footer_App">
+            <div class="footer_Information">
+                <div class="footer_Brand">
+                    <h1 class="dev">AppHec.dev</h1>
+                    <img class="app_Icon" src="img/Logo.webp" alt="App Logo">
+                </div>
+            </div>
+            <div class="copy">
+                <p>Desarrollado por: Héctor. ©</p>
+                <a class="mail" href="mailto:hectoremdz@gmail.com">hectoremdz@gmail.com</a>
+            </div>
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    </body>
+</html>

@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+
+:root {
+    --primary-color: #0e001e;
+    --secondary-color: #37e2f9;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+body {
+    color: #fff;
+    background-color: var(--primary-color);
+}
+
+.randomLetter {
+    font-weight: bolder;
+    font-size: 1.6em;
+}
+
+.banner_Container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+}
+
+.generateWord {
+    display: flex;
+    justify-content: center;
+    font-weight: 500;
+    font-size: 2.5em;
+    padding: 55px;
+}
+
+.interaction {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 50px;
+}
+
+.btn_Create {
+    color: #fff;
+    font-size: 1.3em;
+    font-weight: 600;
+    background-color: #0e001e;
+    border: 3px solid #37e2f9;
+    padding: 15px 15px;
+    border-radius: 15px;
+}
+
+.btn_Create:active {
+    transition: all 0.1s ease-in-out;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.instructions {
+    margin-top: 1.8em;
+    font-weight: lighter;
+    color: #ffffffd5;
+    text-align: center;
+}
+
+.useWords {
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.logRecord {
+    letter-spacing: 5px;
+    word-break: break-all;
+    width: 350px;
+    text-align: justify;
+    display: flex;
+    justify-content: start;
+    font-size: 25px;
+}
+
+.footer_App {
+    border-top: 2px solid #37e2f9;
+}
+
+.socialMedia {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer_Brand {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.dev {
+    margin: 5px;
+}
+
+.copy {
+    position: fixed;
+    bottom: 0;
+    font-size: 15px;
+    padding: 15px;
+
+    .mail {
+        color: #fff;
+        text-decoration: none;
+    }
+}
+
+@media (max-width: 400px) {
+    .app_Banner {
+        width: 250px;
+    }
+}
