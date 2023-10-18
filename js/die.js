@@ -5,7 +5,7 @@ export class Die {
     };
     getRandomNumber() {
         let index = Math.floor(Math.random() * (this.max - this.min + 1)) + this.min;
-        this.max = this.max - 1;
+        this.max--;
         return index;
     };
 };

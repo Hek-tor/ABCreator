@@ -1,7 +1,7 @@
 export class ViewController {
     constructor() {
         this.text = document.getElementById('letter');
-        this.register = document.getElementById('logRecord');
+        this.container = document.getElementById('logRecord');
         this.record = [];
     };
 
@@ -18,11 +18,11 @@ export class ViewController {
 
     logLetter(newLetter) {
         this.record.push(newLetter);
-        this.register.innerHTML = this.record;
+        this.container.innerHTML = this.record;
     };
 
     gameOver(key) {
-        this.text.innerHTML = `${key}`;
+        this.text.innerHTML = key;
         this.text.classList.remove('randomLetter')
         Swal.fire({
             icon: 'success',
