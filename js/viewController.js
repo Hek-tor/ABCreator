@@ -2,15 +2,16 @@ export class ViewController {
     constructor() {
         this.text = document.getElementById('letter');
         this.container = document.getElementById('logRecord');
+        this.boton = document.getElementById('btn_Create');
         this.record = [];
+        this.gameController = 'Fin del juego';
     };
 
     insertResult(newLetter) {
-        const gameOverkey = 'Fin del juego';
         this.text.classList = 'randomLetter';
         this.text.innerHTML = newLetter;
 
-        if (newLetter === gameOverkey) { this.gameOver(gameOverkey) }
+        if (newLetter === this.gameController) { this.gameOver() }
         else {
             this.logLetter(newLetter);
         };
@@ -21,12 +22,11 @@ export class ViewController {
         this.container.innerHTML = this.record;
     };
 
-    gameOver(key) {
-        this.text.innerHTML = key;
-        this.text.classList.remove('randomLetter')
-        Swal.fire({
+    gameOver() {
+        this.text.classList.remove('randomLetter');
+        return Swal.fire({
             icon: 'success',
-            title: 'Fin del juego',
+            title: this.gameController,
             text: '¡Todas las letra fueron usadas!',
         });
     };

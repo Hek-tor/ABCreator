@@ -4,6 +4,7 @@ export class Alphabet {
             ["A", "B", "C", "D", "E", "F", "G", "H",
                 "I", "J", "K", "L", "M", "N", "Ñ", "O", "P",
                 "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
+        this.alphabetStatus = 'Fin del juego';
     };
     deleteIndex(position) {
         let removeThisIndex = 1;
@@ -16,6 +17,6 @@ export class Alphabet {
             this.deleteIndex(index);
             return selectLetter;
         };
-        return 'Fin del juego';
+        return this.alphabetStatus;
     };
 }
