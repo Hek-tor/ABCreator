@@ -1,6 +1,7 @@
 export class ViewController {
     constructor() {
         this.text = document.getElementById('letter');
+        this.text.classList = 'randomLetter';
         this.container = document.getElementById('logRecord');
         this.boton = document.getElementById('btn_Create');
         this.record = [];
@@ -8,10 +9,11 @@ export class ViewController {
     };
 
     insertResult(newLetter) {
-        this.text.classList = 'randomLetter';
         this.text.innerHTML = newLetter;
 
-        if (newLetter === this.gameController) { this.gameOver() }
+        if (newLetter === this.gameController) {
+            this.gameOver();
+        }
         else {
             this.logLetter(newLetter);
         };

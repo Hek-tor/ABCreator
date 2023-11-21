@@ -2,7 +2,7 @@
 * @name main.js
 * @file Create interaction with the user.
 * @author Hector Emilio, hectoremdz@gmail.com
-* @version 1.0.0
+* @version 1.2.0
 */
 "use strict";
 import { ViewController } from "./viewController.js";

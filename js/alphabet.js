@@ -7,8 +7,8 @@ export class Alphabet {
         this.alphabetStatus = 'Fin del juego';
     };
     deleteIndex(position) {
-        let removeThisIndex = 1;
-        this.Letters.splice(position, removeThisIndex);
+        let rangeToRemove = 1;
+        this.Letters.splice(position, rangeToRemove);
     };
 
     getAlphabet(index) {
